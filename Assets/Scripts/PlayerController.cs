@@ -4,7 +4,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 10;
-
+    private Vector3 projectileSpawnPositon;
     public GameObject projectilePrefab;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,7 +38,10 @@ public class PlayerController : MonoBehaviour
         //launch a prjectile from player by space key
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            //Offset the Y axis for a more realistic bottle flight
+            projectileSpawnPositon = transform.position + new Vector3(0, 0.7f, 0);
+            //Spawn a projectile
+            Instantiate(projectilePrefab, projectileSpawnPositon, projectilePrefab.transform.rotation);
         }
     }
 }
