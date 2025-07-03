@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
     public float xRange = 10;
     private Vector3 projectileSpawnPositon;
     public GameObject projectilePrefab;
-    public float test = 1.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
