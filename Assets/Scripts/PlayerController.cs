@@ -2,8 +2,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
-    public float speed = 10.0f;
-    public float xRange = 10;
+    public float speed = 20.0f;
+    public float xRange = 20;
     private Vector3 projectileSpawnPositon;
     public GameObject projectilePrefab;
 
