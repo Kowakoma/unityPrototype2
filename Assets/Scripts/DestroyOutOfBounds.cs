@@ -8,6 +8,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     void Start()
     {
         //Bla bla bla
+        //One more line for git submodules test
     }
 
     // Update is called once per frame
